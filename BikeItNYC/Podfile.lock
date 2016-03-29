@@ -1,13 +1,19 @@
 PODS:
   - GoogleMaps (1.10.3)
+  - HTMLKit (0.9.1)
   - INTULocationManager (4.2.0)
+  - StripHTML (0.1.1)
 
 DEPENDENCIES:
   - GoogleMaps
+  - HTMLKit (~> 0.9)
   - INTULocationManager (~> 4.2)
+  - StripHTML
 
 SPEC CHECKSUMS:
   GoogleMaps: 945e4ac3b74bcca3ddada51df256eb7beddb474d
+  HTMLKit: b40dde98be95a15526a58a5ac96e05d7c1f5b630
   INTULocationManager: 73f8254b3d05c897c56bb13c190e5b7c648c0998
+  StripHTML: 605c5edb678022c6183fff7ebed56db01219a62d
 
 COCOAPODS: 0.39.0

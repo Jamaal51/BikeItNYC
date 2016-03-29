@@ -3,7 +3,7 @@
 //  TalkinToTheNet
 //
 //  Created by Jamaal Sedayao on 9/22/15.
-//  Copyright © 2015 Mike Kavouras. All rights reserved.
+//  Copyright © 2015 Jamaal Sedayao. All rights reserved.
 //
 
 #import "GoogleMapsViewController.h"
@@ -11,6 +11,8 @@
 #import "APIManager.h"
 #import "NSString+NSString_Sanitize.h"
 #import "DirectionsTableViewCell.h"
+#import <HTMLKit/HTMLKit.h>
+#import <StripHTML/NSString+StripHTML.h>
 
 @import GoogleMaps;
 
@@ -217,6 +219,13 @@ UITableViewDelegate
         
                     for (NSDictionary *step in self.steps){
                         NSString *htmlInstructions = [step objectForKey:@"html_instructions"];
+//                        HTMLParser *parser = [[HTMLParser alloc] initWithString:htmlInstructions];
+//                        HTMLDocument *document = [parser document];
+//
+                        NSString *taglessString = [htmlInstructions removeTags];
+                        NSLog(@"Parsed: %@", taglessString);
+                        
+                        
                         NSString *distance = step[@"distance"][@"text"];
                         NSString *duration = step[@"duration"][@"text"];
                         if (step[@"maneuver"] == nil){
@@ -226,17 +235,17 @@ UITableViewDelegate
                         }
                         directionsCount++;
                         
-                        [self.directionsArray addObject:[htmlInstructions stringByStrippingHTML]]; //method created in NSString+NSString_Sanitize
+                        [self.directionsArray addObject:taglessString]; //method created in NSString+NSString_Sanitize
                         [self.distanceArray addObject:distance];
                         [self.durationArray addObject:duration];
                         [self.maneuverArray addObject:maneuver];
                         [self.numberArray addObject:[NSNumber numberWithInteger:directionsCount]];
                     }
-                    NSLog(@"directions array: %@", self.directionsArray);
-                    NSLog(@"distance array: %@", self.distanceArray);
-                    NSLog(@"duration array: %@", self.durationArray);
-                    NSLog(@"maneuver array: %@",self.maneuverArray);
-                    NSLog(@"number array: %@",self.numberArray);
+//                    NSLog(@"directions array: %@", self.directionsArray);
+//                    NSLog(@"distance array: %@", self.distanceArray);
+//                    NSLog(@"duration array: %@", self.durationArray);
+//                    NSLog(@"maneuver array: %@",self.maneuverArray);
+//                    NSLog(@"number array: %@",self.numberArray);
 
                     
                     //NSLog(@"directions array: %@", self.directionsArray);

@@ -2,8 +2,9 @@
 //  SearchLocationViewController.m
 //  TalkinToTheNet
 ///Users/jsedayao/c4q/unit-2/week-2/unit-2-hw-1/TalkinToTheNet/TalkinToTheNet/SearchLocationViewController.m
+
 //  Created by Jamaal Sedayao on 9/20/15.
-//  Copyright © 2015 Mike Kavouras. All rights reserved.
+//  Copyright © 2015 Jamaal Sedayao. All rights reserved.
 //
 
 #import "SearchLocationViewController.h"

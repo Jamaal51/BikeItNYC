@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  TalkinToTheNet
 //
-//  Created by Michael Kavouras on 9/20/15.
-//  Copyright © 2015 Mike Kavouras. All rights reserved.
+//  Created by Jamaal Sedayao on 9/20/15.
+//  Copyright © 2015 Jamaal Sedayao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
