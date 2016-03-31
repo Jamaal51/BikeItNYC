@@ -6,7 +6,6 @@ target 'TalkinToTheNet' do
 source 'https://github.com/CocoaPods/Specs.git'
 pod 'GoogleMaps'
 pod 'INTULocationManager', '~> 4.2'
-pod 'HTMLKit', '~> 0.9'
 pod 'StripHTML'
 
 end
