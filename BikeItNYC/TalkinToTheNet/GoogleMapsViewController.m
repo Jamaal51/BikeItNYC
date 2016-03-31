@@ -11,7 +11,6 @@
 #import "APIManager.h"
 #import "NSString+NSString_Sanitize.h"
 #import "DirectionsTableViewCell.h"
-#import <HTMLKit/HTMLKit.h>
 #import <StripHTML/NSString+StripHTML.h>
 
 @import GoogleMaps;
