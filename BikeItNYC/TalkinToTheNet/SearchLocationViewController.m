@@ -14,6 +14,8 @@
 #import "GoogleMapsViewController.h"
 #import <INTULocationManager/INTULocationManager.h>
 
+static NSString *googlePlaces = @"AIzaSyCcuZUVAe0WMjzVAJbvB_VYJM6PAyDXcEU";
+
 @interface SearchLocationViewController ()
 <
 UITableViewDataSource,
